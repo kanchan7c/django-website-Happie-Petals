@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% block style %}
+<style>
+    .custom {
+        background: radial-gradient(circle, rgba(233, 8, 8, 0.3) 23%, rgba(126, 20, 74, 0.2) 64%, rgba(240, 106, 6, 0.2) 94%) !important;
+    }
+</style>
+{% endblock style %}
+
+{% block title %}
+Custom Order
+{% endblock title %}
+
+
+{% block body %}
+<div class="container">
+    <div class="row my-5">
+        <div class="col-lg-6  custom mx-lg-auto offset-1 offset-lg-2 border rounded">
+            <h2 class="my-3 text-center">Create your custom order: </h2>
+            <form action="/custom" method="post">
+                {% csrf_token %}
+                <input class="form-control mb-3" type="text" placeholder="Enter the flower names" name="customFlowerName"
+                aria-label="default input example" required>
+                <input class="form-control mb-3" type="text" placeholder="Size of bouquet: S, M, L, XL, XXL"
+                name="customSizeOfBouquet" aria-label="default input example" required>
+                <div class="mb-3">
+                <label for="formFile" class="form-label">Upload sample bouquet picture(Optional)</label>
+                <input class="form-control" type="file" name="customBouquetPicture" id="formFile">
+                </div>
+            <button type="submit" class="btn btn-warning mb-3"><i class="bi bi-flower2 mx-1"></i>Place Order</button>
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock body %}

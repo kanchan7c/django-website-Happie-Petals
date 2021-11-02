@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Login
+{% endblock title %}
+
+    
+    {% block style %}
+    <style>
+        .contact{        
+         background: radial-gradient(circle, rgba(233, 8, 8, 0.3) 23%, rgba(126, 20, 74, 0.2) 64%, rgba(240, 106, 6, 0.2) 94%) !important;
+        }
+    </style>
+    {% endblock style %}
+        
+    
+{% block body %}
+<div class="container-fluid px-0 my-3">
+    <div class="row my-3">
+        <div class="col-12">
+            <div class="alert alert-warning alert-dismissible fade show p-2 text-center text-danger" role="alert">
+                <strong>Hello there!</strong> Sign up today to get additional 10% discount.
+                <button type="button" class="btn-close pb-2" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+        </div>
+    </div>
+
+    <div class="row-11 d-flex justify-content-lg-evenly align-items-center contact">
+        <div class="col-lg-6 d-none d-lg-block my-3">
+            <img src="/static/contact-image.jpg"  class="figure-img img-fluid rounded " style="z-index: -1;" alt="contact">
+          </div>  
+
+            <div class="col-10 col-lg-4 mx-auto mx-lg-0">
+                <h1 class="my-3 mx-auto py-2 rounded">Log In</h1>
+                <div class="form-floating mb-3">
+                    <input type="username" class="form-control" name="username" id="floatingInput" placeholder="Enter username">
+                    <label for="floatingInput">Username</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="col-10 my-3">
+                    <button class="btn btn-warning mb-3" type="submit"><i class="bi bi-flower2 mx-1"></i>Login</button>
+                  </div>
+            </div>
+    </div>
+</div>
+{% endblock body %}
+    
+    

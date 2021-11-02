@@ -17,6 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 
+admin.site.site_header = "Happie Petals"
+admin.site.site_title = "Admin Portal"
+admin.site.index_title = "Welcome to Happie Petals"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls'))

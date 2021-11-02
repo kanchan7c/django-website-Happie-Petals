@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Contact
+{% endblock title %}
+
+
+{% block style %}
+<style>
+    .contact {
+        background: radial-gradient(circle, rgba(233, 8, 8, 0.3) 23%, rgba(126, 20, 74, 0.2) 64%, rgba(240, 106, 6, 0.2) 94%) !important;
+    }
+</style>
+{% endblock style %}
+
+
+{% block body %}
+<div class="container-fluid px-0 my-3">
+    <div class="row my-3">
+        <div class="col-12">
+            <div class="alert alert-warning alert-dismissible fade show p-2 text-center text-danger" role="alert">
+                <strong>Hello there!</strong> Sign up today to get additional 10% discount.
+                <button type="button" class="btn-close pb-2" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-11 d-flex justify-content-lg-evenly align-items-center contact">
+        <div class="col-lg-6 d-none d-lg-block my-3">
+            <img src="/static/contact-image.jpg" class="figure-img img-fluid rounded " style="z-index: -1;"
+                alt="contact">
+        </div>
+
+        <div class="col-10 col-lg-4 mx-auto mx-lg-0 mt-3">
+            <h1 class="my-3 mx-auto py-2 rounded">Contact Us</h1>
+            <h5><i class="bi bi-geo-alt-fill"></i> <span>123 Some address 144892</span></h5>
+            <h5><i class="bi bi-telephone-fill"></i> <span> 123-456-7890</span> </h5>
+            <h5><i class="bi bi-envelope-fill"></i> <span> info@happiepetals.in</span></h5>
+            <form method="post" action="/contact">
+                {% csrf_token %}
+                <input type="text" class="form-control my-3" id="name" name="name" placeholder="Your name" aria-label="Name"
+                    aria-describedby="basic-addon2">
+                <input type="email" class="form-control my-3" id="email" name="email" placeholder="Your email" aria-label="Email"
+                    aria-describedby="basic-addon2">
+                <input type="text" class="form-control my-3" id="phone" name="phone" placeholder="Phone number" aria-label="Phone"
+                    aria-describedby="basic-addon2">
+                <textarea class="form-control my-3" aria-label="With textarea" id="messageBox" name="messageBox"
+                    placeholder="Write your message here"></textarea>
+                <button class="btn btn-warning mb-3" type="submit"><i class="bi bi-flower2 mx-1"></i>Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock body %}

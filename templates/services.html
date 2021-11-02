@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Services
+{% endblock title %}
+
+{% block style %}
+<style>
+    .album {
+        background-image: radial-gradient(circle, rgba(233, 8, 8, 0.3) 23%, rgba(255, 0, 131, 0.2) 64%, rgba(240, 106, 6, 0.2) 94%) !important;
+    }
+
+    .album-background {
+        background: radial-gradient(circle, rgba(233, 8, 8, 0.3) 23%, rgba(255, 0, 131, 0.2) 64%, rgba(240, 106, 6, 0.2) 94%);
+        border-radius: 15px;
+        color: black;
+    }
+    button {
+        border-radius: 2% !important;
+        font-weight: 500 !important;
+    }
+
+    h4{
+        background-image: radial-gradient(circle, rgba(233,8,8,1) 23%, rgba(255,0,131,1) 64%, rgba(240,106,6,1) 94%) !important;
+        background-clip: text !important;
+        color: transparent !important;
+    }
+
+    h2{
+        background: radial-gradient(circle, rgba(233, 8, 8, 0.3) 23%, rgba(255, 0, 131, 0.2) 64%, rgba(240, 106, 6, 0.2) 94%);
+    }
+</style>
+{% endblock style %}
+
+
+{% block body %}
+<section class="py-lg-2 text-center container">
+    <div class="row py-lg-2">
+        <div class="col-lg-6 col-md-8 mx-auto my-3 album-background">
+            <h1 class="fw-bold mt-3">Our range of Products</h1>
+            <p class="lead my-3 fs-6">We sell a wide range of varieties of bouquets made of all varieties of flowers.
+                Select from our range or order a custom made.</p>
+            <p>
+                <a href="#album" class="btn btn-warning my-3"><i class="bi bi-flower2 mx-1"></i>Explore Range</a>
+                <a href="/custom" class="btn btn-warning my-3"><i class="bi bi-flower2 mx-1"></i>Custom Order</a>
+                <a href="#pricing" class="btn btn-warning my-3"><i class="bi bi-flower2 mx-1"></i>Subscription Pricing</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="py-5 bg-light" id="album">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/flower1.jpg" alt="1">
+                    <div class="card-body">
+                        <h4 class="text-center">PERSONALIZED BOUQUET</h4>
+                        <p class="card-text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque, quas reiciendis nostrum ullam quod nisi deserunt, temporibus blanditiis, voluptatibus
+                            ea modi mollitia quia inventore nulla quam? Nihil dolorem corporis itaque!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger mx-1">-</button>
+                                <span class="mx-1 p-1"> 0 </span>
+                                <button type="button" class="btn btn-sm btn-outline-success mx-1">+</button>
+                                <button type="button" class="btn btn-sm btn-warning mx-1 "><i class="bi bi-flower2 mx-1"></i>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/flower2.jpg" alt="2">
+                    <div class="card-body">
+                        <h4 class="text-center">WHITE ROSE BUNCH </h4>
+                        <p class="card-text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque, quas reiciendis nostrum ullam quod nisi deserunt, temporibus blanditiis, voluptatibus
+                            ea modi mollitia quia inventore nulla quam? Nihil dolorem corporis itaque!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger mx-1">-</button>
+                                <span class="mx-1 p-1"> 0 </span>
+                                <button type="button" class="btn btn-sm btn-outline-success mx-1">+</button>
+                                <button type="button" class="btn btn-sm btn-warning mx-1 "><i class="bi bi-flower2 mx-1"></i>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/flower3.jpg" alt="3">
+                    <div class="card-body">
+                        <h4 class="text-center">CENTER DECOR FLOWER VASE</h4>
+                        <p class="card-text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque, quas reiciendis nostrum ullam quod nisi deserunt, temporibus blanditiis, voluptatibus
+                            ea modi mollitia quia inventore nulla quam? Nihil dolorem corporis itaque!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger mx-1">-</button>
+                                <span class="mx-1 p-1"> 0 </span>
+                                <button type="button" class="btn btn-sm btn-outline-success mx-1">+</button>
+                                <button type="button" class="btn btn-sm btn-warning mx-1 "><i class="bi bi-flower2 mx-1"></i>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/flower4.jpg" alt="4">
+                    <div class="card-body">
+                        <h4 class="text-center">WEDDING BOUQUET</h4>
+                        <p class="card-text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque, quas reiciendis nostrum ullam quod nisi deserunt, temporibus blanditiis, voluptatibus
+                            ea modi mollitia quia inventore nulla quam? Nihil dolorem corporis itaque!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger mx-1">-</button>
+                                <span class="mx-1 p-1"> 0 </span>
+                                <button type="button" class="btn btn-sm btn-outline-success mx-1">+</button>
+                                <button type="button" class="btn btn-sm btn-warning mx-1 "><i class="bi bi-flower2 mx-1"></i>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/flower5.jpg" alt="5">
+                    <div class="card-body">
+                        <h4 class="text-center">MINIMALISTIC BOUQUET</h4>
+                        <p class="card-text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque, quas reiciendis nostrum ullam quod nisi deserunt, temporibus blanditiis, voluptatibus
+                            ea modi mollitia quia inventore nulla quam? Nihil dolorem corporis itaque!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger mx-1">-</button>
+                                <span class="mx-1 p-1"> 0 </span>
+                                <button type="button" class="btn btn-sm btn-outline-success mx-1">+</button>
+                                <button type="button" class="btn btn-sm btn-warning mx-1 "><i class="bi bi-flower2 mx-1"></i>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/flower6.jpg" alt="6">
+                    <div class="card-body">
+                        <h4 class="text-center">SIMPLE TULIP FLOWER VASE</h4>
+                        <p class="card-text text-center ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque, quas reiciendis nostrum ullam quod nisi deserunt, temporibus blanditiis, voluptatibus
+                            ea modi mollitia quia inventore nulla quam? Nihil dolorem corporis itaque!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger mx-1">-</button>
+                                <span class="mx-1 p-1"> 0 </span>
+                                <button type="button" class="btn btn-sm btn-outline-success mx-1">+</button>
+                                <button type="button" class="btn btn-sm btn-warning mx-1 "><i class="bi bi-flower2 mx-1"></i>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/flower7.jpg" alt="7">
+                    <div class="card-body">
+                        <h4 class="text-center">YELLOW ROSES BUNCH</h4>
+                        <p class="card-text text-center ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque, quas reiciendis nostrum ullam quod nisi deserunt, temporibus blanditiis, voluptatibus
+                            ea modi mollitia quia inventore nulla quam? Nihil dolorem corporis itaque!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger mx-1">-</button>
+                                <span class="mx-1 p-1"> 0 </span>
+                                <button type="button" class="btn btn-sm btn-outline-success mx-1">+</button>
+                                <button type="button" class="btn btn-sm btn-warning mx-1 "><i class="bi bi-flower2 mx-1"></i>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/flower8.jpg" alt="8">
+                    <div class="card-body">
+                        <h4 class="text-center">CASUAL BOUQUET</h4>
+                        <p class="card-text text-center ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque, quas reiciendis nostrum ullam quod nisi deserunt, temporibus blanditiis, voluptatibus
+                            ea modi mollitia quia inventore nulla quam? Nihil dolorem corporis itaque!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger mx-1">-</button>
+                                <span class="mx-1 p-1"> 0 </span>
+                                <button type="button" class="btn btn-sm btn-outline-success mx-1">+</button>
+                                <button type="button" class="btn btn-sm btn-warning mx-1 "><i class="bi bi-flower2 mx-1"></i>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/flower9.jpg" alt="9">
+                    <div class="card-body">
+                        <h4 class="text-center">PARTY DESIGNER BOUQUET</h4>
+                        <p class="card-text text-center ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque, quas reiciendis nostrum ullam quod nisi deserunt, temporibus blanditiis, voluptatibus
+                            ea modi mollitia quia inventore nulla quam? Nihil dolorem corporis itaque!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger mx-1">-</button>
+                                <span class="mx-1 p-1"> 0 </span>
+                                <button type="button" class="btn btn-sm btn-outline-success mx-1">+</button>
+                                <button type="button" class="btn btn-sm btn-warning mx-1 "><i class="bi bi-flower2 mx-1"></i>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid album" id="pricing">
+    <h2 class="text-center mb-3 p-2">Subscription Rates</h2>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Once</h4>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">Discount: $0<small class="text-muted fw-light">/mo</small></h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>1 free bouquet upgrade on 1st order</li>
+              <li>Email support on orders</li>
+              <li>Unlimited Membership</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-warning fs-6"><i class="bi bi-flower2 mx-1"></i>Subscribe to our newsletter</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Monthly</h4>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">Discount: $15<small class="text-muted fw-light">/mo</small></h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>1 free bouquet upgrade on subscription</li>
+              <li>Priority email support</li>
+              <li>Unlimited Membership</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-warning fs-6"><i class="bi bi-flower2 mx-1"></i>Subscribe Monthly Bouquet</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Daily</h4>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">Discount: $29<small class="text-muted fw-light">/mo</small></h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 free casual bouquets per month</li>
+              <li>Phone and email support</li>
+              <li>Unlimited Membership</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-warning fs-6"><i class="bi bi-flower2 mx-1"></i>Subscribe Daily Bouquet</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock body %}

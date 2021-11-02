@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<style>
+    .about {
+        background: radial-gradient(circle, rgba(233, 8, 8, 0.3) 23%, rgba(126, 20, 74, 0.2) 64%, rgba(240, 106, 6, 0.2) 94%) !important;
+    }
+
+    .lead, h1 {
+        background-image: radial-gradient(circle, rgba(233,8,8,1) 23%, rgba(255,0,131,1) 64%, rgba(240,106,6,1) 94%) !important;
+            background-clip: text !important;
+            color: transparent !important;
+    }
+</style>
+{% endblock style %}
+
+{% block title %}
+    About
+{% endblock title %}
+
+
+{% block body %}
+    <div class="container-fluid px-0">
+        <div class="row">
+            <h1 class="text-center mt-3">About Us</h1>
+            <div class="col-lg-12">
+                <div class="about text-dark-50 mx-auto w-75 border rounded my-3">
+                    <h2 class="p-2 mx-2">Who we are?</h2>
+                    <p class="lead p-2 mx-2">We make the town's most beautiful bouquets</p>
+                    <p class="p-2 mx-2">Parties, decorations, small functions or suprising your loved ones, we are here for you. Book your order with us and get 10% discount on your first order.</p>
+                    <p class="p-2 mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel assumenda autem commodi suscipit aperiam voluptatibus rerum voluptates modi, laborum veniam omnis ullam magni nulla saepe itaque rem, quasi harum hic molestias doloribus, voluptate tenetur. Error numquam similique repudiandae! Ipsum labore earum sequi voluptatum in quisquam animi! Sit natus magnam molestias?</p>
+                    <p class="p-2 mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nostrum nihil nobis.</p>
+                    <p class="p-2 mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ratione? Accusamus obcaecati vitae tempora ipsa? Commodi eum velit, reiciendis illum libero iure aliquid mollitia temporibus repellendus perspiciatis rem veritatis cupiditate earum esse magnam pariatur itaque porro accusantium iste nisi? Sit, eos alias nesciunt consequatur error minima rerum ducimus, distinctio ipsum enim laborum quidem assumenda magnam exercitationem maxime quis ex doloribus!</p>
+                    <a href="/services" class="btn btn-warning p-2 mx-3 mb-3"><i class="bi bi-flower2 mx-1 "></i>Book now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+    
+    
